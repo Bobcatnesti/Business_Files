@@ -1,0 +1,137 @@
+body, .container, .logo, .dns-link {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+body {
+    background-image: url("Mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.beta {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.dns-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50px; 
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .beta {
+        font-size: 1rem;
+    }
+
+    .logo {
+        left: 20px;
+        font-size: 2rem;
+    }
+
+    .dns-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .beta {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        left: 15px;
+        font-size: 1.8rem; 
+    }
+
+    .dns-link {
+        font-size: 0.8rem;
+    }
+}
